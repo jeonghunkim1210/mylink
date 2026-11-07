@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyLink | 김정훈</title>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --text: #1d2433;
+      --sub: #667085;
+      --accent: #0e4a9c;
+      --border: #e3e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    main { width: 100%; max-width: 420px; text-align: center; }
+    .avatar {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px; font-weight: 700; margin: 0 auto 16px;
+    }
+    h1 { font-size: 22px; margin-bottom: 6px; }
+    .bio { color: var(--sub); font-size: 14px; line-height: 1.6; margin-bottom: 28px; }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    .links a {
+      display: block; padding: 15px 18px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px;
+      transition: transform .15s, border-color .15s;
+    }
+    .links a:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); }
+    footer { margin-top: 36px; font-size: 12px; color: var(--sub); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="avatar">JH</div>
+    <h1>김정훈</h1>
+    <p class="bio">한양대학교 경영학부<br>회계 · 재무 × 데이터 분석</p>
+
+    <nav class="links">
+      <a href="https://github.com/jeonghunkim1210" target="_blank">GitHub</a>
+      <a href="https://blog.naver.com/pianojack" target="_blank">블로그</a>
+    </nav>
+
+    <footer>© 2026 MyLink · 아이디어를 현실로 바이브코딩</footer>
+  </main>
+</body>
+</html>
